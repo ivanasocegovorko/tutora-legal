@@ -2,64 +2,43 @@
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
-    <meta
-        name="description"
-        content="Tutora – pronađite tutora i rezervirajte instrukcije."
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tutora – pronađite tutora i rezervirajte termine instrukcija.">
     <title>Tutora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#sadrzaj">Prijeđi na sadržaj</a>
+
     <header>
         <div class="header-content">
-            <a class="brand" href="index.html">
-                Tutora
-            </a>
+            <a class="brand" href="index.html" aria-current="page">Tutora</a>
 
             <nav aria-label="Glavna navigacija">
-                <a href="privacy.html">
-                    Privatnost
-                </a>
-                <a href="terms.html">
-                    Uvjeti
-                </a>
-                <a href="support.html">
-                    Podrška
-                </a>
+                <a href="privacy.html">Privatnost</a>
+                <a href="terms.html">Uvjeti</a>
+                <a href="support.html">Podrška</a>
+                <a href="delete-account.html">Brisanje računa</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="sadrzaj">
         <section class="hero">
+            <p class="eyebrow">Učenje počinje dobrim povezivanjem</p>
             <h1>Tutora</h1>
 
             <p>
-                Mobilna platforma koja povezuje učenike,
-                roditelje i tutore te omogućuje jednostavno
-                pronalaženje tutora i rezerviranje termina
+                Mobilna platforma koja povezuje punoljetne učenike,
+                roditelje i zakonske skrbnike s tutorima te omogućuje
+                jednostavno pronalaženje tutora i rezerviranje termina
                 instrukcija.
             </p>
 
             <div class="button-row">
-                <a
-                    class="button"
-                    href="support.html"
-                >
-                    Kontaktirajte podršku
-                </a>
-
-                <a
-                    class="button secondary"
-                    href="privacy.html"
-                >
-                    Politika privatnosti
-                </a>
+                <a class="button" href="support.html">Kontaktirajte podršku</a>
+                <a class="button secondary" href="privacy.html">Politika privatnosti</a>
             </div>
         </section>
 
@@ -67,15 +46,15 @@
             <h2>O aplikaciji</h2>
 
             <p>
-                Tutora omogućuje tutorima izradu profila,
-                objavu dostupnih termina i upravljanje
-                rezervacijama.
+                Tutora omogućuje tutorima izradu profila, objavu dostupnih
+                termina i upravljanje zahtjevima za rezervaciju.
             </p>
 
             <p>
-                Punoljetni učenici, roditelji i zakonski
-                skrbnici mogu pretraživati dostupne tutore
-                i slati zahtjeve za rezervaciju instrukcija.
+                Punoljetni učenici, roditelji i zakonski skrbnici mogu
+                pretraživati dostupne tutore i slati zahtjeve za rezervaciju
+                instrukcija. Jedan termin traje 45 minuta, osim ako je u
+                aplikaciji izričito navedeno drukčije.
             </p>
         </section>
 
@@ -83,16 +62,13 @@
             <h2>Pravne informacije</h2>
 
             <p>
-                Voditelj aplikacije i obrade osobnih podataka:
+                Pružatelj aplikacije i voditelj obrade osobnih podataka:
                 <strong>Ivana Soče Govorko</strong>
             </p>
 
             <p>
                 Kontakt:
-                <a
-                    class="contact-link"
-                    href="mailto:tutora.pomoc@gmail.com"
-                >
+                <a class="contact-link" href="mailto:tutora.pomoc@gmail.com">
                     tutora.pomoc@gmail.com
                 </a>
             </p>
@@ -102,16 +78,17 @@
     </main>
 
     <footer>
-        <p>
-            © 2026 Tutora
-        </p>
+        <p>© 2026 Tutora</p>
         <p>
             <a href="privacy.html">Privatnost</a>
-            ·
+            <span aria-hidden="true">·</span>
             <a href="terms.html">Uvjeti korištenja</a>
-            ·
+            <span aria-hidden="true">·</span>
             <a href="support.html">Podrška</a>
+            <span aria-hidden="true">·</span>
+            <a href="delete-account.html">Brisanje računa</a>
         </p>
     </footer>
 </body>
 </html>
+

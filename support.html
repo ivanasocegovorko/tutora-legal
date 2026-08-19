@@ -2,61 +2,50 @@
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
-    <meta
-        name="description"
-        content="Podrška za korisnike aplikacije Tutora."
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Podrška za korisnike aplikacije Tutora.">
     <title>Podrška – Tutora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#sadrzaj">Prijeđi na sadržaj</a>
+
     <header>
         <div class="header-content">
-            <a class="brand" href="index.html">
-                Tutora
-            </a>
+            <a class="brand" href="index.html">Tutora</a>
 
             <nav aria-label="Glavna navigacija">
                 <a href="privacy.html">Privatnost</a>
                 <a href="terms.html">Uvjeti</a>
-                <a href="support.html">Podrška</a>
+                <a href="support.html" aria-current="page">Podrška</a>
+                <a href="delete-account.html">Brisanje računa</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="sadrzaj">
         <h1>Podrška</h1>
 
-        <p>
-            Trebate pomoć s korisničkim računom,
-            rezervacijom, profilom tutora ili radom
-            aplikacije?
+        <p class="lead">
+            Trebate pomoć s korisničkim računom, rezervacijom, profilom tutora
+            ili radom aplikacije? Javite nam se i opišite problem.
         </p>
 
         <section class="card">
             <h2>Kontakt</h2>
 
-            <p>
-                Podršku možete kontaktirati putem adrese:
-            </p>
+            <p>Podršku možete kontaktirati putem adrese:</p>
 
             <p>
-                <a
-                    class="contact-link"
-                    href="mailto:tutora.pomoc@gmail.com"
-                >
+                <a class="contact-link" href="mailto:tutora.pomoc@gmail.com">
                     tutora.pomoc@gmail.com
                 </a>
             </p>
 
             <p>
-                Na poruke odgovaramo u najkraćem mogućem
-                roku.
+                Na poruke odgovaramo u najkraćem mogućem roku. Podrška nije
+                hitna služba.
             </p>
         </section>
 
@@ -64,72 +53,79 @@
             <h2>Brisanje korisničkog računa</h2>
 
             <p>
-                Račun možete izbrisati izravno u aplikaciji:
-            </p>
-
-            <ol>
-                <li>Otvorite karticu Profil.</li>
-                <li>
-                    Pronađite odjeljak za brisanje računa.
-                </li>
-                <li>Odaberite Izbriši račun.</li>
-                <li>Potvrdite konačno brisanje.</li>
-            </ol>
-
-            <p>
-                Brisanjem računa uklanjaju se profil i
-                povezani podaci, osim podataka koje je
-                potrebno zadržati prema primjenjivim
-                propisima.
+                Račun možete izbrisati izravno u aplikaciji. Ako ne možete
+                pristupiti aplikaciji, brisanje možete zatražiti i putem javne
+                stranice.
             </p>
 
             <p>
-                Ako ne možete pristupiti aplikaciji,
-                pošaljite zahtjev za pomoć na našu adresu
-                e-pošte.
+                <a class="button" href="delete-account.html">
+                    Otvori upute za brisanje računa
+                </a>
             </p>
         </section>
 
         <section class="card">
             <h2>Prijava problema</h2>
 
-            <p>
-                Kako bismo lakše provjerili problem, u poruci
-                navedite:
-            </p>
+            <p>Kako bismo lakše provjerili problem, u poruci navedite:</p>
 
             <ul>
-                <li>kratak opis problema;</li>
-                <li>
-                    koristite li studentski ili tutorski
-                    račun;
-                </li>
-                <li>model uređaja i verziju sustava;</li>
-                <li>
-                    snimku zaslona, ako ne sadrži osjetljive
-                    podatke.
-                </li>
+                <li>kratak opis problema i što ste očekivali da će se dogoditi;</li>
+                <li>koristite li studentski ili tutorski račun;</li>
+                <li>model uređaja i verziju operacijskog sustava;</li>
+                <li>verziju aplikacije, ako je poznata;</li>
+                <li>snimku zaslona, ako ne sadrži osjetljive podatke.</li>
             </ul>
 
             <p>
-                Nikada nam nemojte slati svoju lozinku.
+                Nikada nam nemojte slati lozinku, cijeli pristupni token, podatke
+                platne kartice ni dokument koji nije izričito potreban za
+                rješavanje problema.
+            </p>
+        </section>
+
+        <section class="card" id="prijava-sadrzaja">
+            <h2>Prijava nezakonitog sadržaja ili ponašanja</h2>
+
+            <p>
+                Možete prijaviti lažni profil, prijevaru, uznemiravanje,
+                diskriminaciju, nezakonit sadržaj ili drugi sigurnosni problem.
+                Kako bi prijava bila dovoljno precizna za provjeru, navedite:
+            </p>
+
+            <ul>
+                <li>opis spornog sadržaja ili ponašanja i razlog prijave;</li>
+                <li>ime profila, termin ili drugi podatak koji omogućuje pronalazak sadržaja;</li>
+                <li>snimku zaslona, ako je dostupna i sigurna za slanje;</li>
+                <li>svoje ime i adresu e-pošte za povratnu informaciju;</li>
+                <li>potvrdu da prijavu podnosite u dobroj vjeri i da su navedeni podaci točni.</li>
+            </ul>
+
+            <p>
+                <a
+                    class="button"
+                    href="mailto:tutora.pomoc@gmail.com?subject=Prijava%20sadrzaja%20ili%20sigurnosnog%20problema"
+                >
+                    Pošalji prijavu
+                </a>
+            </p>
+
+            <p>
+                Prijavu ćemo pregledati i prema okolnostima poduzeti primjerene
+                mjere. Osobi na koju se odluka odnosi možemo dati obrazloženje i
+                mogućnost da zatraži ponovnu provjeru. Nemojte javno objavljivati
+                tuđe osobne podatke.
             </p>
         </section>
 
         <section class="card">
             <h2>Podaci pružatelja</h2>
 
-            <p>
-                <strong>Ivana Soče Govorko</strong>
-            </p>
-
+            <p><strong>Ivana Soče Govorko</strong></p>
             <p>Republika Hrvatska</p>
-
             <p>
-                <a
-                    class="contact-link"
-                    href="mailto:tutora.pomoc@gmail.com"
-                >
+                <a class="contact-link" href="mailto:tutora.pomoc@gmail.com">
                     tutora.pomoc@gmail.com
                 </a>
             </p>
@@ -140,10 +136,12 @@
         <p>© 2026 Tutora</p>
         <p>
             <a href="index.html">Početna</a>
-            ·
+            <span aria-hidden="true">·</span>
             <a href="privacy.html">Privatnost</a>
-            ·
+            <span aria-hidden="true">·</span>
             <a href="terms.html">Uvjeti korištenja</a>
+            <span aria-hidden="true">·</span>
+            <a href="delete-account.html">Brisanje računa</a>
         </p>
     </footer>
 </body>
